@@ -1,3 +1,7 @@
+## Demo
+
+![Hellobooks AI Assistant](demo.png)
+
 # Hellobooks AI Assistant
 
 This project is a Retrieval Augmented Generation (RAG) based AI assistant for answering accounting related questions using a knowledge base.
@@ -20,6 +24,11 @@ knowledge_base/
 
 streamlit_app.py
 
+### Environment Variables
+
+The project uses the following variables in `.env`:
+
+- `GROQ_API_KEY` – API key for Groq LLM
 
 ## Setup Instructions
 
@@ -59,18 +68,29 @@ streamlit run streamlit_app.py
 ## Docker Setup
 
 ### Build Docker Image
-
-
 docker build -t hellobooks-ai .
 
-
 ### Run Docker Container
-
-
 docker run -p 8501:8501 hellobooks-ai
-
-
 Open browser:
-
-
 http://localhost:8501
+
+## Tech Stack
+
+- Python
+- LangChain
+- ChromaDB
+- HuggingFace Embeddings
+- Groq LLM
+- Streamlit
+- Docker
+
+## References
+
+- [LangChain](https://www.langchain.com/)
+- [ChromaDB](https://www.trychroma.com/)
+- [Groq LLM](https://www.groq.com/)
+- [Sentence Transformers](https://www.sbert.net/)
+
+created by:
+~DIYA BOSAMIYA
